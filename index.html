@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청정 힐링 도시, 동해시 관광 프레젠테이션</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body {
+            font-family: 'Pretendard', sans-serif;
+            overflow: hidden;
+            background-color: #0f172a;
+        }
+        .slide {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            animation: fadeIn 0.4s ease-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-slate-800 select-none">
+
+    <!-- Slide 1: 표지 -->
+    <section class="slide active flex-col justify-center items-center text-center bg-gradient-to-br from-[#05668D] via-[#028090] to-[#00A896] text-white p-8 relative">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1.5px,transparent_1.5px)] [background-size:24px_24px]"></div>
+        <div class="max-w-4xl z-10">
+            <span class="inline-block bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm md:text-base font-semibold tracking-wider mb-6">
+                KTX로 2시간 만에 만나는 동해안 최고의 힐링 도시
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                청정 힐링 도시,<br>
+                <span class="text-teal-200">동해시</span> 관광 가이드
+            </h1>
+            <p class="text-lg md:text-2xl text-teal-50 font-light max-w-2xl mx-auto leading-relaxed">
+                에메랄드빛 푸른 바다와 웅장한 산·계곡,<br>
+                도심 속 신비로운 동굴까지 한 번에 만나는 다채로운 매력
+            </p>
+        </div>
+    </section>
+
+    <!-- Slide 2: 동해시 핵심 매력 및 접근성 -->
+    <section class="slide flex-col justify-center bg-slate-50 p-8 md:p-16">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="mb-10">
+                <span class="text-[#028090] font-bold text-sm tracking-widest uppercase">01. OVERVIEW</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-1">왜 지금, 동해시인가?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100">
+                    <div class="w-14 h-14 bg-teal-50 text-[#00A896] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="train" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">압도적인 접근성</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        KTX 동해역·묵호역 직통 개통으로 서울 및 수도권에서 <strong>2시간 대</strong>면 도착하는 빠르고 쾌적한 동해안 관문 도시입니다.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-50 text-[#05668D] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="compass" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">짧은 동선, 풍부한 콘텐츠</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        해변·계곡·동굴·벽화마을 등 성격이 다른 명소들이 인접해 있어 당일치기부터 1박 2일까지 알찬 여행이 가능합니다.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="footprints" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">트레킹 & 힐링 최적지</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        코리아둘레길 <strong>해파랑길(33·34코스)</strong>이 관통하며, 바다와 숲을 동시에 걷는 최고의 치유 여행을 선사합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: 5대 권역별 핵심 관광 명소 (1) 해양 & 감성 -->
+    <section class="slide flex-col justify-center bg-white p-8 md:p-16">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="mb-10">
+                <span class="text-[#028090] font-bold text-sm tracking-widest uppercase">02. KEY ATTRACTIONS I</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-1">해양·감성·휴양 대표 권역</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-b from-teal-50/70 to-white p-8 rounded-3xl border border-teal-100 shadow-sm">
+                    <span class="inline-block bg-[#00A896] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">묵호권역</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">감성과 스릴의 만남</h3>
+                    <ul class="space-y-3 text-slate-700 text-sm md:text-base">
+                        <li><strong>• 도째비골 스카이밸리:</strong> 해상 스카이워크, 자이언트 슬라이드, 스카이사이클</li>
+                        <li><strong>• 논골담길 & 묵호등대:</strong> 어촌 역사가 담긴 정겨운 벽화골목과 오션뷰 카페</li>
+                        <li><strong>• 어달해변:</strong> 밤바다 야경과 감성 카페거리</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-b from-sky-50/70 to-white p-8 rounded-3xl border border-sky-100 shadow-sm">
+                    <span class="inline-block bg-[#05668D] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">추암권역</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">대한민국 대표 일출 명소</h3>
+                    <ul class="space-y-3 text-slate-700 text-sm md:text-base">
+                        <li><strong>• 추암 촛대바위:</strong> 애국가 첫 소절 배경의 웅장한 기암괴석 일출</li>
+                        <li><strong>• 추암 해상 출렁다리:</strong> 바다 위 72m를 가로지르는 짜릿한 도보 체험</li>
+                        <li><strong>• 해암정:</strong> 고즈넉한 멋을 간직한 고려 시대 정자</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-b from-cyan-50/70 to-white p-8 rounded-3xl border border-cyan-100 shadow-sm">
+                    <span class="inline-block bg-[#028090] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">망상권역</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">명품 휴양 피서지</h3>
+                    <ul class="space-y-3 text-slate-700 text-sm md:text-base">
+                        <li><strong>• 망상해수욕장:</strong> 울창한 송림과 넓은 백사장, 얕은 수심의 명사십리</li>
+                        <li><strong>• 오토캠핑리조트 & 한옥마을:</strong> 가족 단위 체류형 힐링 숙박 인프라 완비</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: 5대 권역별 핵심 관광 명소 (2) 산악·이색·도심 -->
+    <section class="slide flex-col justify-center bg-slate-50 p-8 md:p-16">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="mb-10">
+                <span class="text-[#028090] font-bold text-sm tracking-widest uppercase">03. KEY ATTRACTIONS II</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-1">천하절경 계곡 & 도심 속 자연</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-md border border-slate-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-3.5 py-1.5 rounded-full">무릉권역</span>
+                        <i data-lucide="mountain" class="w-7 h-7 text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">신선이 노닐던 천하절경</h3>
+                    <div class="space-y-4 text-slate-700">
+                        <p class="leading-relaxed">
+                            <strong>• 무릉계곡 (베틀바위 산성길):</strong> 두타산·청옥산이 빚은 명승지. '한국의 장가계'라 불리는 베틀바위와 쌍폭포·용추폭포의 비경.
+                        </p>
+                        <p class="leading-relaxed">
+                            <strong>• 무릉별유천지:</strong> 폐석회석 광산을 에메랄드빛 호수와 라벤더 정원, 루지·알파인 코스터 등 이색 레포츠 단지로 재탄생시킨 핫플레이스.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-md border border-slate-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-amber-600 text-white text-xs font-bold px-3.5 py-1.5 rounded-full">천곡권역</span>
+                        <i data-lucide="sparkles" class="w-7 h-7 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">도심 속 신비로운 생태 탐방</h3>
+                    <div class="space-y-4 text-slate-700">
+                        <p class="leading-relaxed">
+                            <strong>• 천곡황금박쥐동굴:</strong> 국내 유일 도심 중심부에 자리한 4~5억 년 세월의 천연 석회암 동굴. 희귀종 황금박쥐 서식지로 사계절 내내 쾌적한 탐방 가능.
+                        </p>
+                        <p class="leading-relaxed">
+                            <strong>• 한섬감성바닷길:</strong> 시내 인접 해안을 따라 펼쳐지는 고요한 산책로와 감성 해안 터널 포토존.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: 동해 미식 여행 & 마무리 -->
+    <section class="slide flex-col justify-center bg-gradient-to-br from-slate-900 via-[#05668D] to-[#028090] text-white p-8 md:p-16">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="mb-10">
+                <span class="text-teal-200 font-bold text-sm tracking-widest uppercase">04. LOCAL GASTRONOMY</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mt-1">오감을 채우는 동해 미식 여행</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur-md p-7 rounded-2xl border border-white/15">
+                    <div class="text-3xl mb-3">🦀</div>
+                    <h3 class="text-xl font-bold mb-2">묵호항 대게 & 활어회</h3>
+                    <p class="text-teal-50 text-sm leading-relaxed">
+                        갓 잡아 올린 신선한 동해안 제철 활어회와 살이 꽉 찬 달달한 대게를 합리적인 가격에 즐기는 필수 미식 코스
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-7 rounded-2xl border border-white/15">
+                    <div class="text-3xl mb-3">🍲</div>
+                    <h3 class="text-xl font-bold mb-2">시원한 곰치국 (물곰탕)</h3>
+                    <p class="text-teal-50 text-sm leading-relaxed">
+                        부드러운 곰치와 묵은 신김치를 푹 끓여내어 칼칼하고 개운한 국물 맛이 일품인 동해 대표 향토 해장 음식
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-7 rounded-2xl border border-white/15">
+                    <div class="text-3xl mb-3">🍜</div>
+                    <h3 class="text-xl font-bold mb-2">장칼국수 & 감자옹심이</h3>
+                    <p class="text-teal-50 text-sm leading-relaxed">
+                        걸쭉하고 진한 고추장 베이스 국물의 장칼국수와 쫄깃하고 구수한 감자옹심이가 어우러진 강원 별미
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white/15 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
+                <p class="text-lg md:text-2xl font-bold text-teal-100">
+                    바다와 산, 감성과 미식이 머무는 곳 — 지금 동해시로 떠나보세요!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Controls -->
+    <div class="fixed bottom-6 left-0 right-0 z-50 flex items-center justify-center gap-6 px-4">
+        <div class="bg-slate-900/80 backdrop-blur-md text-white px-5 py-2.5 rounded-full flex items-center gap-5 shadow-xl border border-white/10">
+            <button onclick="prevSlide()" class="hover:text-teal-300 transition-colors flex items-center gap-1 text-sm font-semibold">
+                <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                <span>이전</span>
+            </button>
+            <span id="slide-counter" class="text-sm font-mono font-bold text-teal-300">1 / 5</span>
+            <button onclick="nextSlide()" class="hover:text-teal-300 transition-colors flex items-center gap-1 text-sm font-semibold">
+                <span>다음</span>
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const counter = document.getElementById('slide-counter');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            counter.textContent = `${index + 1} / ${slides.length}`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                prevSlide();
+            }
+        });
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
